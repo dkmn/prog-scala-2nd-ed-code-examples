@@ -6,3 +6,7 @@ val filteredBreeds = for {
   breed <- dogBreeds
   if breed.contains("Terrier") && !breed.startsWith("Yorkshire")
 } yield breed
+
+filteredBreeds.toString()
+
+

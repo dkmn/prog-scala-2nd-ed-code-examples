@@ -28,3 +28,12 @@ s.draw(Point(1.0,2.0)){
 s.draw(){
   str => println(s"ShapesDrawingActoreDKK: $str")
 }
+
+def m1[A](a: A, f: A => String) = f(a)
+
+def m2[A](a: A)(f: A => String) = f(a)
+
+//m1(100, i => s"$i + $i")
+
+m2(100)(i => s"$i + $i")
+m2("hello")(i => s"$i + $i")

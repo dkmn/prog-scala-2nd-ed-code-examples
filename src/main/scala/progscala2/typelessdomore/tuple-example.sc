@@ -11,3 +11,8 @@ println( t1 + ", " + t2 + ", " + t3 )
 
 val (t4, t5, t6) = Tuple3("World", '!', 0x22)                        // <4>
 println( t4 + ", " + t5 + ", " + t6 )   
+
+(1, "one")
+
+1 -> "one"
+

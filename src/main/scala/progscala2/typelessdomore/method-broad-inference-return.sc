@@ -1,8 +1,8 @@
 // src/main/scala/progscala2/typelessdomore/method-broad-inference-return.sc
 
-def makeList(strings: String*) = {
+def makeList(strings: String*) : List[String] = {
   if (strings.length == 0)
-    Nil  // #1
+    List.empty[String]  // #1
   else
     strings.toList
 }
