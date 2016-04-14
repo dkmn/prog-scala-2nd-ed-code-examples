@@ -6,6 +6,6 @@ object WeekDay extends Enumeration {
 }
 import WeekDay._
 
-def isWorkingDay(d: WeekDay) = ! (d == Sat || d == Sun)
+def isWorkingDay(d: WeekDay.WeekDay) = ! (d == WeekDay.Sat || d == WeekDay.Sun)
 
 WeekDay.values filter isWorkingDay foreach println
